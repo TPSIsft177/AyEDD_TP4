@@ -26,7 +26,7 @@ namespace Ejercicio6
             int top = currentPosition.Item2;
 
             Console.Clear();
-            
+
             switch (keyPressed)
             {
                 case ConsoleKey.LeftArrow:

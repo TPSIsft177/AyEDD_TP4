@@ -1,11 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    ".NETCoreApp,Version=v3.1": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net5.0": []
+    ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
     "C:\\Users\\Jorge\\.nuget\\packages\\": {}
@@ -13,24 +13,24 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jorge\\Desktop\\Jorge Terceario\\AyEDD\\Workspace\\TP4\\TP4\\Ejercicio6\\Ejercicio6.csproj",
-      "projectName": "Ejercicio6",
-      "projectPath": "C:\\Users\\Jorge\\Desktop\\Jorge Terceario\\AyEDD\\Workspace\\TP4\\TP4\\Ejercicio6\\Ejercicio6.csproj",
+      "projectUniqueName": "C:\\Users\\Jorge\\Desktop\\Jorge Terceario\\AyEDD\\Workspace\\TP4\\TP4\\Ejercicio1\\Ejercicio1.csproj",
+      "projectName": "Ejercicio1",
+      "projectPath": "C:\\Users\\Jorge\\Desktop\\Jorge Terceario\\AyEDD\\Workspace\\TP4\\TP4\\Ejercicio1\\Ejercicio1.csproj",
       "packagesPath": "C:\\Users\\Jorge\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jorge\\Desktop\\Jorge Terceario\\AyEDD\\Workspace\\TP4\\TP4\\Ejercicio6\\obj\\",
+      "outputPath": "C:\\Users\\Jorge\\Desktop\\Jorge Terceario\\AyEDD\\Workspace\\TP4\\TP4\\Ejercicio1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jorge\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net5.0"
+        "netcoreapp3.1"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -41,8 +41,8 @@
       }
     },
     "frameworks": {
-      "net5.0": {
-        "targetAlias": "net5.0",
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -53,6 +53,16 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.10, 3.1.10]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.1.14, 3.1.14]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
