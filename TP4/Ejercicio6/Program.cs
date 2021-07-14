@@ -21,8 +21,8 @@ namespace Ejercicio6
         {
             Console.CursorVisible = false;
             Console.Clear();
-            Console.SetCursorPosition(0, GetWindowHeightMiddle());
-            Draw(ShipWithBomb);
+            Thread.Sleep(500); // Espero este tiempo por la consola integrada
+            Draw(ShipWithBomb, 0, GetWindowHeightMiddle());
         }
         
         /// <summary>
@@ -41,17 +41,21 @@ namespace Ejercicio6
         ///         </item>
         ///     </list>
         /// </returns>
-        static bool KeyPressedIsNotEscape(ConsoleKey keyPressed)
+        private static bool KeyPressedIsNotEscape(ConsoleKey keyPressed)
         {
             return ConsoleKey.Escape != keyPressed;
         }
-        
+
         /// <summary>
-        /// Escribe en pantalla el texto indicado en el parámetro objectToDraw
+        /// Escribe en la consola el texto indicado en el parámetro objectToDraw; ubicandolo en la posición indicada
+        /// por lo parámetros left y top 
         /// </summary>
         /// <param name="objectToDraw"></param>
-        static void Draw(string objectToDraw)
+        /// <param name="left">Ubicación en el eje X</param>
+        /// <param name="top">Ubicación en el eje Y</param>
+        private static void Draw(string objectToDraw, int left, int top)
         {
+            Console.SetCursorPosition(left, top);
             Console.Write(objectToDraw);
         }
 
@@ -68,50 +72,69 @@ namespace Ejercicio6
             int top = currentPosition.Item2;
 
             Console.Clear();
-
+            int newLeftPosition = 0;
+            int newTopPosition = 0;
+            
             switch (keyPressed)
             {
                 case ConsoleKey.LeftArrow:
+                case ConsoleKey.A:
                     if (left - ship.Length - 2 >= 0)
-                        Console.SetCursorPosition((left - ship.Length) - 2, top);
-                    else
-                        Console.SetCursorPosition(0, top);
-                    
-                    Draw(ship);
+                    {
+                        newLeftPosition = (left - ship.Length) - 2;
+                    }
+
+                    Draw(ship, newLeftPosition, top);
                     break;
                 case ConsoleKey.RightArrow:
-                    if(Console.WindowWidth > left+1) //No llegó al tope derecho
-                        Console.SetCursorPosition(left - (ship.Length-2)-2, top);
+                case ConsoleKey.D:
+                    if (Console.WindowWidth > left + 1) //No llegó al tope derecho
+                        newLeftPosition = left - (ship.Length - 2) - 2;
                     else //Llegó al tope derecho por lo que no avanzo
-                        Console.SetCursorPosition(Console.WindowWidth-ship.Length-2, top);
+                        newLeftPosition = Console.WindowWidth - ship.Length - 2;
                     
-                    Draw(ship);
+                    Draw(ship, newLeftPosition, top);
                     break;
                 case ConsoleKey.UpArrow:
-                    if(top > 0)
-                        Console.SetCursorPosition(left-ship.Length-1, top - 1);
+                case ConsoleKey.W:
+                    if (top > 0)
+                    {
+                        newLeftPosition = left - ship.Length - 1;
+                        newTopPosition = top - 1;
+                    }
                     else
-                        Console.SetCursorPosition(left-ship.Length-1, 0);
-                    
-                    Draw(ship);
+                    {
+                        newLeftPosition = left - ship.Length - 1;
+                        newTopPosition = 0;
+                    }
+
+                    Draw(ship, newLeftPosition, newTopPosition);
                     break;
                 case ConsoleKey.DownArrow:
-                    if(Console.WindowHeight > top + 2) // Dejo una fila para que se vea por lo menos la explosión
-                        Console.SetCursorPosition(left-ship.Length-1, top + 1);
+                case ConsoleKey.S:
+                    if (Console.WindowHeight > top + 2) // Dejo una fila para que se vea la explosión
+                    {
+                        newLeftPosition = left - ship.Length - 1;
+                        newTopPosition = top + 1;
+                    }
                     else
-                        Console.SetCursorPosition(left-ship.Length-1, Console.WindowHeight - 2);
+                    {
+                        newLeftPosition = left - ship.Length - 1;
+                        newTopPosition = Console.WindowHeight - 2;
+                    }
                     
-                    Draw(ship);
+                    Draw(ship, newLeftPosition, newTopPosition);
                     break;
                 default:
-                    if(left > ship.Length)
-                        Console.SetCursorPosition(left-ship.Length-1, top);
+                    newLeftPosition = left;
+                    if (left > ship.Length)
+                    {
+                        newLeftPosition = left - ship.Length - 1;
+                    }
 
-                    Draw(ship);
+                    Draw(ship, newLeftPosition, top);
                     break;
             }
-            
-            //Draw(ship);
         }
 
         /// <summary>
@@ -131,11 +154,9 @@ namespace Ejercicio6
                 
                 while (bombTop + 1 < Console.WindowHeight - 1)
                 {
-                    Console.SetCursorPosition(left - ShipWithoutBomb.Length, shipPositionTop);
-                    Draw(ShipWithoutBomb);
-                    //FIXME: Modificar para cuando el largo de la nave es par
-                    Console.SetCursorPosition(left - (ShipWithoutBomb.Length + 1) / 2, bombTop + 1);
-                    Draw(Bomb);
+                    Draw(ShipWithoutBomb, (left - ShipWithoutBomb.Length), shipPositionTop);
+                    //FIXME: Modificar para cuando el ancho de la nave es par
+                    Draw(Bomb, (left - (ShipWithoutBomb.Length + 1) / 2), bombTop + 1);
                     
                     bombTop = GetCurrentPosition().Item2;
                     Thread.Sleep(300);
@@ -144,8 +165,7 @@ namespace Ejercicio6
                     
                 }
                 
-                Console.SetCursorPosition(left - ShipWithBomb.Length, shipPositionTop);
-                Draw(ShipWithBomb);
+                Draw(ShipWithBomb, left - ShipWithBomb.Length, shipPositionTop);
             }
         }
 
