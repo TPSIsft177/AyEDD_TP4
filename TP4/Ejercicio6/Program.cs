@@ -133,6 +133,7 @@ namespace Ejercicio6
                 {
                     Console.SetCursorPosition(left - ShipWithoutBomb.Length, shipPositionTop);
                     Draw(ShipWithoutBomb);
+                    //FIXME: Modificar para cuando el largo de la nave es par
                     Console.SetCursorPosition(left - (ShipWithoutBomb.Length + 1) / 2, bombTop + 1);
                     Draw(Bomb);
                     
