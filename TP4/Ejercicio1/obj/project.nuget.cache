@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "TA5VikPHE8j2uC/IxvzRYBNpoITszWwFSJ3dL/FwqNhPrYqIk8WV4/zMEBzmXQQ0cNchD7F2OsOWTD6XsT7Upw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Jorge\\Desktop\\Jorge Terceario\\AyEDD\\Workspace\\TP4\\TP4\\Ejercicio1\\Ejercicio1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jorge\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\Jorge\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.14\\microsoft.netcore.app.host.win-x64.3.1.14.nupkg.sha512"
+  ],
+  "logs": []
+}

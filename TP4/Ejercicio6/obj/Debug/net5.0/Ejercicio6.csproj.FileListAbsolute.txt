@@ -14,3 +14,19 @@ C:\Users\a309729\RiderProjects\AyEDD_TP4\TP4\Ejercicio6\obj\Debug\net5.0\Ejercic
 C:\Users\a309729\RiderProjects\AyEDD_TP4\TP4\Ejercicio6\obj\Debug\net5.0\ref\Ejercicio6.dll
 C:\Users\a309729\RiderProjects\AyEDD_TP4\TP4\Ejercicio6\obj\Debug\net5.0\Ejercicio6.pdb
 C:\Users\a309729\RiderProjects\AyEDD_TP4\TP4\Ejercicio6\obj\Debug\net5.0\Ejercicio6.genruntimeconfig.cache
+C:\Users\Jorge\Desktop\Jorge Terceario\AyEDD\Workspace\TP4\TP4\Ejercicio6\bin\Debug\net5.0\Ejercicio6.exe
+C:\Users\Jorge\Desktop\Jorge Terceario\AyEDD\Workspace\TP4\TP4\Ejercicio6\bin\Debug\net5.0\Ejercicio6.deps.json
+C:\Users\Jorge\Desktop\Jorge Terceario\AyEDD\Workspace\TP4\TP4\Ejercicio6\bin\Debug\net5.0\Ejercicio6.runtimeconfig.json
+C:\Users\Jorge\Desktop\Jorge Terceario\AyEDD\Workspace\TP4\TP4\Ejercicio6\bin\Debug\net5.0\Ejercicio6.runtimeconfig.dev.json
+C:\Users\Jorge\Desktop\Jorge Terceario\AyEDD\Workspace\TP4\TP4\Ejercicio6\bin\Debug\net5.0\Ejercicio6.dll
+C:\Users\Jorge\Desktop\Jorge Terceario\AyEDD\Workspace\TP4\TP4\Ejercicio6\bin\Debug\net5.0\ref\Ejercicio6.dll
+C:\Users\Jorge\Desktop\Jorge Terceario\AyEDD\Workspace\TP4\TP4\Ejercicio6\bin\Debug\net5.0\Ejercicio6.pdb
+C:\Users\Jorge\Desktop\Jorge Terceario\AyEDD\Workspace\TP4\TP4\Ejercicio6\obj\Debug\net5.0\Ejercicio6.csprojAssemblyReference.cache
+C:\Users\Jorge\Desktop\Jorge Terceario\AyEDD\Workspace\TP4\TP4\Ejercicio6\obj\Debug\net5.0\Ejercicio6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jorge\Desktop\Jorge Terceario\AyEDD\Workspace\TP4\TP4\Ejercicio6\obj\Debug\net5.0\Ejercicio6.AssemblyInfoInputs.cache
+C:\Users\Jorge\Desktop\Jorge Terceario\AyEDD\Workspace\TP4\TP4\Ejercicio6\obj\Debug\net5.0\Ejercicio6.AssemblyInfo.cs
+C:\Users\Jorge\Desktop\Jorge Terceario\AyEDD\Workspace\TP4\TP4\Ejercicio6\obj\Debug\net5.0\Ejercicio6.csproj.CoreCompileInputs.cache
+C:\Users\Jorge\Desktop\Jorge Terceario\AyEDD\Workspace\TP4\TP4\Ejercicio6\obj\Debug\net5.0\Ejercicio6.dll
+C:\Users\Jorge\Desktop\Jorge Terceario\AyEDD\Workspace\TP4\TP4\Ejercicio6\obj\Debug\net5.0\ref\Ejercicio6.dll
+C:\Users\Jorge\Desktop\Jorge Terceario\AyEDD\Workspace\TP4\TP4\Ejercicio6\obj\Debug\net5.0\Ejercicio6.pdb
+C:\Users\Jorge\Desktop\Jorge Terceario\AyEDD\Workspace\TP4\TP4\Ejercicio6\obj\Debug\net5.0\Ejercicio6.genruntimeconfig.cache
